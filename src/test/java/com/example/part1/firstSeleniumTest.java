@@ -73,10 +73,19 @@ public class firstSeleniumTest {
 
         Assert.assertEquals("Dashboard" , actualResult);
 
-
       }
 
+/**
+ * page object modele design pattern :
+ * 
+ *  code reusability : reuse code in multiple locations in our program 
+ * 
+ *  code readability : code is easy to follow
+ * 
+ *  code maintanability : take less time to make a change to our code 
+ *  
+ */
 
-
+   
 }
 
