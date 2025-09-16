@@ -27,7 +27,7 @@ public class BasePage {
 
     }
     protected void click(By locator){
-        find(locator).click();\
+        find(locator).click();
     }
 
 }
