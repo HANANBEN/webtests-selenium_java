@@ -1,17 +1,19 @@
 package com.example.part3_4.base;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import static com.example.utilities.Utility.setUtilityDriver;
+
 
 import com.example.demoqa.pages.HomePage;
 import com.saucedemo.pages.BasePage;
 
 public class BaseTest {
 
-    private WebDriver driver;
+    protected WebDriver driver;
     protected BasePage basePage; 
     protected HomePage homePage; 
     private String DEMOQA_URL= "https://demoqa.com/"; 
@@ -37,7 +39,8 @@ public class BaseTest {
         driver.get(DEMOQA_URL);
         basePage=new BasePage(); 
         basePage.setDriver(driver);
-        homePage= new HomePage();
+        setUtilityDriver();
+        homePage= new HomePage(driver);
     }
 
     @AfterClass
