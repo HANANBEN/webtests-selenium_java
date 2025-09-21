@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-21T10:33:04 WEST" name="Surefire suite" finished-at="2025-09-21T10:33:30 WEST" duration-ms="26508">
+    <groups>
+    </groups>
+    <test started-at="2025-09-21T10:33:04 WEST" name="Surefire test" finished-at="2025-09-21T10:33:30 WEST" duration-ms="26508">
+      <class name="com.example.part3_4.tests.part3.javascript.JavaScriptTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.part3_4.tests.part3.javascript.JavaScriptTest@f8c1ddd]" started-at="2025-09-21T10:33:21 WEST" name="setUp" finished-at="2025-09-21T10:33:22 WEST" duration-ms="881" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="loadApplication()[pri:0, instance:com.example.part3_4.tests.part3.javascript.JavaScriptTest@f8c1ddd]" started-at="2025-09-21T10:33:22 WEST" name="loadApplication" finished-at="2025-09-21T10:33:30 WEST" duration-ms="8032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadApplication -->
+        <test-method signature="testScrollingToElement()[pri:0, instance:com.example.part3_4.tests.part3.javascript.JavaScriptTest@f8c1ddd]" started-at="2025-09-21T10:33:30 WEST" name="testScrollingToElement" finished-at="2025-09-21T10:33:30 WEST" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScrollingToElement -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.part3_4.tests.part3.javascript.JavaScriptTest@f8c1ddd]" started-at="2025-09-21T10:33:30 WEST" name="tearDown" finished-at="2025-09-21T10:33:30 WEST" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.part3_4.tests.part3.javascript.JavaScriptTest -->
+      <class name="com.example.part2.tests.products.ProductTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.part2.tests.products.ProductTest@7995092a]" started-at="2025-09-21T10:33:19 WEST" name="setUp" finished-at="2025-09-21T10:33:20 WEST" duration-ms="1707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testProductsHeaderIsDisplayed()[pri:0, instance:com.example.part2.tests.products.ProductTest@7995092a]" started-at="2025-09-21T10:33:20 WEST" name="testProductsHeaderIsDisplayed" finished-at="2025-09-21T10:33:21 WEST" duration-ms="417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductsHeaderIsDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.part2.tests.products.ProductTest@7995092a]" started-at="2025-09-21T10:33:21 WEST" name="tearDown" finished-at="2025-09-21T10:33:21 WEST" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.part2.tests.products.ProductTest -->
+      <class name="com.example.part2.tests.login.loginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.part2.tests.login.loginTest@6293abcc]" started-at="2025-09-21T10:33:04 WEST" name="setUp" finished-at="2025-09-21T10:33:18 WEST" duration-ms="14243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginErrorMessage()[pri:0, instance:com.example.part2.tests.login.loginTest@6293abcc]" started-at="2025-09-21T10:33:18 WEST" name="testLoginErrorMessage" finished-at="2025-09-21T10:33:19 WEST" duration-ms="370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginErrorMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.part2.tests.login.loginTest@6293abcc]" started-at="2025-09-21T10:33:19 WEST" name="tearDown" finished-at="2025-09-21T10:33:19 WEST" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.part2.tests.login.loginTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
