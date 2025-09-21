@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import junit.framework.Assert;
 
@@ -19,7 +20,11 @@ public class firstSeleniumTest {
     // the goal of a web driver is to controle the browser and help fon the elements 
      @BeforeClass
      public static void setUp(){
-        driver = new ChromeDriver(); 
+      ChromeOptions options = new ChromeOptions();
+options.addArguments("--headless");            // run without UI
+options.addArguments("--no-sandbox");          // required in CI
+options.addArguments("--disable-dev-shm-usage"); // avoid memory issues
+ driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"); 
 

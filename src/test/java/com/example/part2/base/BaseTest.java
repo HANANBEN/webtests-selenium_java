@@ -3,6 +3,7 @@ package com.example.part2.base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -64,7 +65,11 @@ Good for cleanup at class level.
 
     @BeforeClass
     public void setUp() {
-        driver= new ChromeDriver(); 
+       ChromeOptions options = new ChromeOptions();
+options.addArguments("--headless");            // run without UI
+options.addArguments("--no-sandbox");          // required in CI
+options.addArguments("--disable-dev-shm-usage"); // avoid memory issues
+driver = new ChromeDriver(options);
 
         driver.manage().window().maximize();
         driver.get(url);
